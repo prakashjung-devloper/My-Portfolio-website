@@ -1,4 +1,5 @@
-import React from "react";
+import { useState } from "react";
+
 import Navbar from "../Component/Navbar";
 import Hero from "../Component/Hero";
 import About from "../Component/About";
@@ -8,22 +9,23 @@ import Certificate from "../Component/Certificate";
 import Contact from "../Component/Contact";
 import Footer from "../Component/Footer";
 
-export default function Home({ darkMode, setDarkMode}) {
+export default function Home() {
+  const [darkMode, setDarkMode] = useState(false);
+
   return (
-  <>
+    <>
       <Navbar
         darkMode={darkMode}
-        setDarkMode={setDarkMode}/>
+        setDarkMode={setDarkMode}
+      />
 
-      <Hero/>
+      <Hero />
       <About />
-      <Skill/>
-      <Project/>
-      <Certificate/>
-      <Contact/>
-      <Footer/>
-
+      <Skill />
+      <Project />
+      <Certificate />
+      <Contact />
+      <Footer />
     </>
   );
 }
-
