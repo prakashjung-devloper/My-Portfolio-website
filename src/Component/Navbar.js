@@ -1,3 +1,4 @@
+'use client';
 import { useEffect, useState } from "react";
 import { ArrowRight, Sun, Moon } from "lucide-react";
 
@@ -5,12 +6,21 @@ export default function Navbar({ darkMode, setDarkMode }) {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
+    const root = document.documentElement;
+    
+    if (darkMode) {
+      root.setAttribute("data-theme", "dark");
+    } else {
+      root.setAttribute("data-theme", "light");
+    }
+  }, [darkMode]); 
+
+  useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
     };
 
     window.addEventListener("scroll", handleScroll);
-
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -60,12 +70,15 @@ export default function Navbar({ darkMode, setDarkMode }) {
               <a className="nav-link" href="#certificates">
                 Certificates
               </a>
+              <a className="nav-link" href="#certificates">
+                Certificates
+              </a>
 
               <a className="nav-link" href="#contact">
                 Contact
               </a>
 
-              {/* Theme */}
+              {/* Theme Toggle Button */}
               <button
                 className="theme-toggle btn rounded-circle"
                 onClick={() => setDarkMode(!darkMode)}

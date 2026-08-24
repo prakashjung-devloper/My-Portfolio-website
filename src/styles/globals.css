@@ -24,14 +24,7 @@ body {
 }
 
 
-.btn:hover{
-transition: all 0.3  ease-in-out;
-transform: scale(1.07);
-background-color:  #06b6d4; 
-    border-color:#3F2492 ;
-     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15)
 
-}
 
 
 .nav-link:hover{
@@ -57,16 +50,43 @@ background-color:  #06b6d4;
   }
 }
 
-.light-theme {
-  background-color: #0A0C1A !important;
-  color: whitesmoke;
-  
+/* 🌊 Continuous Diagonal Floating Vector Framework */
+
+.continuous-move-avatar {
+  animation: smoothComplexFloat 6s ease-in-out infinite;
+  will-change: transform; 
 }
 
-.dark-theme {
-  background-color:rgb(62, 108, 192) !important;
-  color: white;
+@keyframes smoothComplexFloat {
+  0% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+  25% {
+    transform: translate(8px, -15px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-4px, -25px) rotate(-1deg); 
+  }
+  75% {
+    transform: translate(6px, -10px) rotate(0.5deg); 
+  }
+  100% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -460,7 +480,15 @@ color: #94a3b8;
 
 .navbar-brand {
   font-size: 1.4rem;
+  color: rgb(98, 155, 209) !important;
+transition: 0.3s ease-out;
+}
+
+
+.navbar-brand:hover {
+  font-size: 1.4rem;
   color: white !important;
+transition: 0.3s ease-out;
 }
 
 .navbar-brand span {
@@ -544,4 +572,22 @@ color: #94a3b8;
     width: 100%;
     margin-top: 5px;
   }
+}
+
+:root[data-theme="dark"] {
+  --bg-color: #0b0d11;
+  --text-color: #ffffff;
+  --card-bg: #11141a;
+}
+
+:root[data-theme="light"] {
+  --bg-color: #0A0C1A ;
+  --text-color: #0b0d11;
+  --card-bg: #f8f9fa;
+}
+
+body {
+  background-color: var(--bg-color) !important;
+  color: white!important;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
