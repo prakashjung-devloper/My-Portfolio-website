@@ -70,9 +70,7 @@ export default function Navbar({ darkMode, setDarkMode }) {
               <a className="nav-link" href="#certificates">
                 Certificates
               </a>
-              <a className="nav-link" href="#certificates">
-                Certificates
-              </a>
+             
 
               <a className="nav-link" href="#contact">
                 Contact
