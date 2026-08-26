@@ -18,7 +18,7 @@ export default function Contact() {
         "template_9vd4c52",
         form.current,
         {
-          publicKey: "Qe9e2WSOUmxbN5_-R",
+          publicKey: "mM6hQNHHPtnJ8CnaA",
         }
       )
       .then(
