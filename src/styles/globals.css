@@ -501,11 +501,13 @@ transition: 0.3s ease-out;
 .nav-link {
   color: white !important;
   font-weight: 500;
-  transition: 0.3s ease;
+  transition: 0.3s ease-in-out;
 }
 
 .nav-link:hover {
   color: #60a5fa !important;
+  transform: scale(1.05);
+  transform: translateY(-2px);
 }
 
 
