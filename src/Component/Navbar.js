@@ -39,7 +39,7 @@ export default function Navbar({ darkMode, setDarkMode }) {
           </a>
 
           {/* Mobile hamburger */}
-          <button
+           <button
             className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
@@ -51,9 +51,8 @@ export default function Navbar({ darkMode, setDarkMode }) {
             <span className="navbar-toggler-icon"></span>
           </button>
 
-          {/* Navigation */}
           <div className="collapse navbar-collapse" id="mainNavbar">
-            <div className="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+            <div className="navbar-nav ms-auto align-items-lg-center gap-3">
 
               <a className="nav-link" href="#about">
                 About
@@ -78,7 +77,7 @@ export default function Navbar({ darkMode, setDarkMode }) {
 
               {/* Theme Toggle Button */}
               <button
-                className="theme-toggle btn rounded-circle"
+                className="theme-toggle  rounded-circle"
                 onClick={() => setDarkMode(!darkMode)}
                 aria-label="Toggle theme"
               >

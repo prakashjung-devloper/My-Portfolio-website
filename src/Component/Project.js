@@ -18,25 +18,25 @@ export default function Projects() {
           <div className="project-card h-100">
 
             <img
-              src="broadway.png"
-              alt="Broadway Website Clone"
+              src="travel.png"
+              alt="Travel Website "
               className="img-fluid"
             />
 
             <div className="p-4">
-              <h3>Broadway Website</h3>
+              <h3>Travel Website</h3>
 
               <p>
-                A responsive website built using HTML, CSS
-                and Bootstrap.
+                A responsive website built in Next.js
+               .
               </p>
 
               <p className="technology">
-                HTML • CSS • Bootstrap
+                React • Next.js
               </p>
 
               <a
-                href=" https://prakashjung-devloper.github.io/broadway-website/"
+                href=" https://prakashjung-devloper.github.io/Travel-web/"
                 target="_blank"
                 rel="noreferrer"
                 className="btn btn-primary me-2"
@@ -46,7 +46,7 @@ export default function Projects() {
               </a>
 
               <a
-                href="https://github.com/prakashjung-devloper/broadway-website"
+                href="https://github.com/prakashjung-devloper/Travel-web.git"
                 target="_blank"
                 rel="noreferrer"
                 className="btn btn-outline-light"
