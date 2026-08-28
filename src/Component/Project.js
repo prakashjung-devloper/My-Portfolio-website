@@ -1,5 +1,6 @@
 import { ExternalLink, } from "lucide-react";
-import { FaGithub, SiVercel} from "react-icons/fa";
+import { FaGithub} from "react-icons/fa";
+import { SiVercel } from "react-icons/si";
 import React from "react";
 
 
