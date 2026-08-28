@@ -1,5 +1,5 @@
 import { ExternalLink, } from "lucide-react";
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, SiVercel} from "react-icons/fa";
 import React from "react";
 
 
@@ -51,7 +51,7 @@ export default function Projects() {
                 rel="noreferrer"
                 className="btn btn-outline-light"
               >
-                <FaGithub size={16}/>
+                <SiVercel size={16}/>
                <span className="mx-2"> GitHub</span>
               </a>
             </div>
@@ -65,25 +65,24 @@ export default function Projects() {
           <div className="project-card h-100">
 
             <img
-              src="blanxer.png"
-              alt="Blanxer Website"
+              src="APEx.png"
+              alt="Corporate Website"
               className="img-fluid"
             />
 
             <div className="p-4">
-              <h3>Blanxer Website</h3>
+              <h3>Corporate Website</h3>
 
               <p>
-                A responsive website created using HTML,
-                CSS and Bootstrap.
+                A responsive website built in Next.js
               </p>
 
               <p className="technology">
-                HTML • CSS • Bootstrap
+                JS • React • Next.js
               </p>
 
               <a
-                href="https://prakashjung-devloper.github.io/Blanxer-Clone/"
+                href="https://corporate-web-virid.vercel.app"
                 target="_blank"
                 rel="noreferrer"
                 className="btn btn-primary me-2"
@@ -94,13 +93,13 @@ export default function Projects() {
               </a>
 
               <a
-                href="https://github.com/prakashjung-devloper/Blanxer-Clone.git"
+                href="https://corporate-h6b607fuu-prakas-h-jung-kadayat-developer.vercel.app"
                 target="_blank"
                 rel="noreferrer"
                 className="btn btn-outline-light"
               >
 <FaGithub size={16}/>
-               <span className="mx-2"> GitHub</span>      
+               <span className="mx-2"> vercel</span>      
                        </a>
             </div>
 
