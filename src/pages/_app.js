@@ -2,8 +2,6 @@ import { useEffect, useState } from "react";
 import "@/styles/globals.css";
 import "bootstrap/dist/css/bootstrap.min.css"; 
 
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-
 export default function App({ Component, pageProps }) {
   const [darkMode, setDarkMode] = useState(false);
 
@@ -13,7 +11,11 @@ export default function App({ Component, pageProps }) {
   }, [darkMode]);
 
   useEffect(() => {
-    typeof document !== "undefined" ? require("bootstrap/dist/js/bootstrap.bundle.min.js") : null;
+    if (typeof window !== "undefined") {
+      import("bootstrap/dist/js/bootstrap.bundle.min.js")
+        .then(() => console.log("Bootstrap JS loaded successfully"))
+        .catch((err) => console.log("Bootstrap JS load error", err));
+    }
   }, []);
 
   return (
