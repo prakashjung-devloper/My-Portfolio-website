@@ -1,40 +1,40 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# 👨‍💻 Prakash Jung — Personal Developer Command Station
 
-## Getting Started
+Welcome to my official professional developer architecture network repository. This application serves as my central matrix showcasing responsive visual modules, clean front-end frameworks, and fluid multi-project workspace configurations.
 
-First, run the development server:
+🚀 **Production Live Endpoint:** [https://github.io](https://github.io)
+
+---
+
+### 🎨 Key Architectural Highlights
+* **Next.js Pages Router Architecture:** Configured running structured client-side code hydration patterns for lightning-fast viewport load states.
+* **Dual Theme Matrix (Dark/Light):** Fully integrated dynamic theme context toggled fluidly across modern computer screen resolutions.
+* **100% Fluid Mobile Responsiveness:** Engineered via strict Bootstrap 5 utilities to ensure the hamburger navigation collapse panel triggers seamlessly on modern touch displays [local].
+* **Integrated Showcase Registry:** Linked directly with live production deployments including my Next.js corporate hub and serverless ecoports [travel].
+
+---
+
+### 🛠️ Tech Stack & Microservices
+* **Core Logic Engine:** React.js / Next.js (Pages Ecosystem)
+* **Visual Blueprint Layout:** Bootstrap 5 Framework (Responsive Rows & Grid Columns)
+* **Iconographic Systems:** React Icons Components (`FaGithub`, `SiVercel`) & Lucide Modules
+* **Styling Layer:** Modular CSS Components & Global Layout Configurations
+
+---
+
+### 💻 Local Engineering Central (How to Run)
+
+To spin up this portfolio terminal configuration inside your local development workspace, execute these terminal commands sequentially:
 
 ```bash
+# 1. Inject core structural modules
+npm install
+
+# 2. Trigger the local live server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser to analyze the live output vector.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+---
+Engineered cleanly with passion by **Prakash Jung** © 2026. All Rights Reserved.
