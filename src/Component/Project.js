@@ -52,7 +52,7 @@ export default function Projects() {
                 rel="noreferrer"
                 className="btn btn-outline-light"
               >
-                <SiVercel size={16}/>
+                <FaGithub size={16}/>
                <span className="mx-2"> GitHub</span>
               </a>
             </div>
@@ -99,7 +99,7 @@ export default function Projects() {
                 rel="noreferrer"
                 className="btn btn-outline-light"
               >
-<FaGithub size={16}/>
+<SiVercel size={16}/>
                <span className="mx-2"> vercel</span>      
                        </a>
             </div>
