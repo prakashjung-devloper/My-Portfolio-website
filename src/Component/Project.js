@@ -116,7 +116,7 @@ export default function Projects() {
           <div className="project-card h-100">
 
             <img
-              src="APEx.png"
+              src="news.png"
               alt="News Portal Website"
               className="img-fluid"
             />
