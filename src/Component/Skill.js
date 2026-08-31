@@ -32,7 +32,7 @@ export default function Skill() {
       short: "JS",
       description: "Interactive web functionality",
       category: "Foundation",
-      status: "Learning",
+      status: "Intermediate",
     },
    
     {
@@ -40,14 +40,14 @@ export default function Skill() {
       short: "Re",
       description: "Component-based UI development",
       category: "Libraries",
-      status: "Learning",
+      status: "Comfortable",
     },
     {
       name: "Next.js",
       short: "Next",
       description: "Modern React applications",
       category: "Frameworks",
-      status: "Learning",
+      status: "Comfortable",
     },
   ];
 
