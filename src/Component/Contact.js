@@ -35,7 +35,7 @@ export default function Contact() {
   return (
     <section id="contact" className="container py-5">
 
-      <h2 className="text-center mb-5">
+      <h2 className="text-center mb-5 text-white">
         Contact Me
       </h2>
 
@@ -45,7 +45,7 @@ export default function Contact() {
         {/* Contact Information */}
         <div className="col-12 col-md-5">
 
-          <h3>Let's Work Together</h3>
+          <h3 className="text-white">Let's Work Together</h3>
 
           <p className="text-secondary">
             Have a project in mind? Feel free to contact me.
@@ -53,7 +53,7 @@ export default function Contact() {
           </p>
 
           {/* Location */}
-          <div className="contact-info">
+          <div className="contact-info text-white">
             <MapPin size={22} />
             <div>
               <small>Location</small>
@@ -62,7 +62,7 @@ export default function Contact() {
           </div>
 
           {/* Email */}
-          <div className="contact-info">
+          <div className="contact-info text-white">
             <Mail size={22} />
             <div>
               <small>Email</small>
@@ -75,7 +75,7 @@ export default function Contact() {
           </div>
 
           {/* GitHub */}
-          <div className="contact-info">
+          <div className="contact-info text-white">
             <FaGithub size={22} />
             <div>
               <small>GitHub</small>
@@ -103,7 +103,7 @@ export default function Contact() {
             className="contact-form"
           >
 
-            <div className="mb-3">
+            <div className="mb-3 text-white">
               <label className="form-label">
                 Name
               </label>
@@ -118,7 +118,7 @@ export default function Contact() {
             </div>
 
 
-            <div className="mb-3">
+            <div className="mb-3 text-white">
               <label className="form-label">
                 Email
               </label>
@@ -133,7 +133,7 @@ export default function Contact() {
             </div>
 
 
-            <div className="mb-3">
+            <div className="mb-3 text-white">
               <label className="form-label">
                 Subject
               </label>
@@ -148,7 +148,7 @@ export default function Contact() {
             </div>
 
 
-            <div className="mb-3">
+            <div className="mb-3 text-white">
               <label className="form-label">
                 Message
               </label>

@@ -121,7 +121,7 @@ export default function Projects() {
               className="img-fluid"
             />
 
-            <div className="p-4">
+            <div className="p-4 text-white">
               <h3>News Website</h3>
 
               <p>
@@ -163,7 +163,7 @@ Optimized for fast loading and smooth browsing across mobile, tablet, and deskto
           <div className="project-card h-100">
 
             <img
-              src="news.png"
+              src="ecommerce.png"
               alt="Ecommerce Website"
               className="img-fluid"
             />
@@ -180,7 +180,7 @@ Optimized for fast loading and smooth browsing across mobile, tablet, and deskto
               </p>
 
               <a
-                href="https://ecommerce-website-omega-teal.vercel.a"
+                href="https://ecommerce-website-omega-teal.vercel.app/"
                 target="_blank"
                 rel="noreferrer"
                 className="btn btn-primary me-2"

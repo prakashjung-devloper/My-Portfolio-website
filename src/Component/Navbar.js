@@ -1,23 +1,12 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { ArrowRight, Sun, Moon } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
-export default function Navbar({ darkMode, setDarkMode }) {
+export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
-  // Theme
-  useEffect(() => {
-    const root = document.documentElement;
-
-    if (darkMode) {
-      root.setAttribute("data-theme", "dark");
-    } else {
-      root.setAttribute("data-theme", "light");
-    }
-  }, [darkMode]);
-
-  // Navbar scroll effect
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
@@ -30,6 +19,10 @@ export default function Navbar({ darkMode, setDarkMode }) {
     };
   }, []);
 
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
   return (
     <div className="navbar-wrapper">
       <nav
@@ -40,70 +33,81 @@ export default function Navbar({ darkMode, setDarkMode }) {
         <div className="container">
 
           {/* Logo */}
-          <a className="navbar-brand fw-bold" href="#">
+          <a
+            className="navbar-brand fw-bold"
+            href="#"
+            onClick={closeMenu}
+          >
             Prakash.<span>dev</span>
           </a>
 
-          {/* Mobile / Tablet Hamburger */}
+          {/* Mobile Hamburger */}
           <button
             className="navbar-toggler"
             type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#mainNavbar"
-            aria-controls="mainNavbar"
-            aria-expanded="false"
+            onClick={() => setMenuOpen(!menuOpen)}
             aria-label="Toggle navigation"
+            aria-expanded={menuOpen}
           >
             <span className="navbar-toggler-icon"></span>
           </button>
 
           {/* Navigation */}
           <div
-            className="collapse navbar-collapse"
+            className={`collapse navbar-collapse ${
+              menuOpen ? "show" : ""
+            }`}
             id="mainNavbar"
           >
-            <div className="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+            <div className="navbar-nav ms-auto align-items-lg-center gap-3">
 
-              <a className="nav-link" href="#about">
+              <a
+                className="nav-link"
+                href="#about"
+                onClick={closeMenu}
+              >
                 About
               </a>
 
-              <a className="nav-link" href="#skill">
+              <a
+                className="nav-link"
+                href="#skill"
+                onClick={closeMenu}
+              >
                 Skills
               </a>
 
-              <a className="nav-link" href="#projects">
+              <a
+                className="nav-link"
+                href="#projects"
+                onClick={closeMenu}
+              >
                 Projects
               </a>
 
-              <a className="nav-link" href="#certificates">
+              <a
+                className="nav-link"
+                href="#certificates"
+                onClick={closeMenu}
+              >
                 Certificates
               </a>
 
-              <a className="nav-link" href="#contact">
+              <a
+                className="nav-link"
+                href="#contact"
+                onClick={closeMenu}
+              >
                 Contact
               </a>
-
-              {/* Theme Toggle */}
-              <button
-                className="theme-toggle rounded-circle"
-                onClick={() => setDarkMode(!darkMode)}
-                aria-label="Toggle theme"
-              >
-                {darkMode ? (
-                  <Sun size={18} />
-                ) : (
-                  <Moon size={18} />
-                )}
-              </button>
 
               {/* Hire Me */}
               <a
                 href="#contact"
                 className="btn btn-primary rounded-pill px-4 hire-btn"
+                onClick={closeMenu}
               >
-                Hire Me
-                <ArrowRight size={17} />
+                Hire Me <ArrowRight size={17} />
               </a>
 
             </div>

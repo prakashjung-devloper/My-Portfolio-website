@@ -637,8 +637,86 @@ background-color: #0a0c1a;
 
 
 /* =========================
+   NAVBAR
+========================= */
+
+.navbar-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar {
+  transition: all 0.3s ease;
+}
+
+.navbar-transparent {
+  background: transparent;
+}
+
+.navbar-scrolled {
+  background: rgba(10, 12, 26, 0.95);
+  backdrop-filter: blur(12px);
+}
+
+/* Logo */
+
+.navbar-brand {
+  font-size: 1.4rem;
+  color: white !important;
+}
+
+.navbar-brand span {
+  color: #0d6efd;
+}
+
+/* Links */
+
+.nav-link {
+  color: white !important;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #0d6efd !important;
+}
+
+/* Hire Me */
+
+.hire-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+
+/* =========================
+   HAMBURGER
+========================= */
+
+.navbar-toggler {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 7px 10px;
+  box-shadow: none !important;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+
+/* Hamburger icon */
+
+.navbar-toggler-icon {
+  filter: invert(1);
+}
+
+
+/* =========================
    TABLET + MOBILE
-   ========================= */
+========================= */
 
 @media (max-width: 991.98px) {
 
@@ -651,7 +729,9 @@ background-color: #0a0c1a;
     margin-top: 15px;
     padding: 15px;
     border-radius: 15px;
-    background: rgba(10, 12, 26, 0.97);
+
+    background: rgba(10, 12, 26, 0.98);
+
     backdrop-filter: blur(15px);
   }
 
@@ -669,20 +749,17 @@ background-color: #0a0c1a;
     background: rgba(255, 255, 255, 0.08);
   }
 
-  .theme-toggle {
-    margin: 10px 15px;
-  }
-
   .hire-btn {
     justify-content: center;
     margin-top: 8px;
+    width: 100%;
   }
 }
 
 
 /* =========================
-   SMALL MOBILE
-   ========================= */
+   MOBILE
+========================= */
 
 @media (max-width: 575.98px) {
 
@@ -700,4 +777,12 @@ background-color: #0a0c1a;
     padding: 12px;
   }
 
+}
+
+.nav-link {
+  color: white !important;
+}
+
+.nav-link:hover {
+  color: #0d6efd !important;
 }
