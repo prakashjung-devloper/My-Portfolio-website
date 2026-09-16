@@ -571,61 +571,133 @@ background-color: #0a0c1a;
 }
 
 
+/* Navbar */
+.navbar-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar {
+  transition: all 0.3s ease;
+}
+
+.navbar-transparent {
+  background: transparent;
+}
+
+.navbar-scrolled {
+  background: rgba(10, 12, 26, 0.95);
+  backdrop-filter: blur(10px);
+}
+
+/* Logo */
+.navbar-brand {
+  font-size: 1.4rem;
+}
+
+.navbar-brand span {
+  color: #0d6efd;
+}
+
+/* Nav links */
+.nav-link {
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+/* Hamburger */
+.navbar-toggler {
+  border: none;
+  box-shadow: none !important;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+/* Theme button */
+.theme-toggle {
+  width: 40px;
+  height: 40px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hire button */
+.hire-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+
 /* =========================
-   MOBILE
-========================= */
+   TABLET + MOBILE
+   ========================= */
 
-@media (max-width: 991px) {
-
-  .navbar-wrapper {
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
+@media (max-width: 991.98px) {
 
   .navbar {
-    min-height: 65px;
+    padding-top: 12px;
+    padding-bottom: 12px;
   }
 
   .navbar-collapse {
     margin-top: 15px;
     padding: 15px;
     border-radius: 15px;
-    background: rgba(15, 23, 42, 0.97);
+    background: rgba(10, 12, 26, 0.97);
+    backdrop-filter: blur(15px);
   }
 
   .navbar-nav {
     align-items: stretch !important;
-    gap: 4px !important;
+    gap: 5px !important;
   }
 
   .nav-link {
-    padding: 10px 12px !important;
+    padding: 12px 15px !important;
+    border-radius: 8px;
+  }
+
+  .nav-link:hover {
+    background: rgba(255, 255, 255, 0.08);
   }
 
   .theme-toggle {
-    margin: 10px 0;
+    margin: 10px 15px;
   }
 
   .hire-btn {
-    width: 100%;
-    margin-top: 5px;
+    justify-content: center;
+    margin-top: 8px;
   }
 }
 
-:root[data-theme="dark"] {
-  --bg-color: #0b0d11;
-  --text-color: #ffffff;
-  --card-bg: #11141a;
-}
 
-:root[data-theme="light"] {
-  --bg-color: #0A0C1A ;
-  --text-color: #0b0d11;
-  --card-bg: #f8f9fa;
-}
+/* =========================
+   SMALL MOBILE
+   ========================= */
 
-body {
-  background-color: var(--bg-color) !important;
-  color: white!important;
-  transition: background-color 0.3s ease, color 0.3s ease;
+@media (max-width: 575.98px) {
+
+  .navbar {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+
+  .navbar-collapse {
+    margin-top: 12px;
+    padding: 12px;
+  }
+
 }

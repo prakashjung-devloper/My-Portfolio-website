@@ -1,27 +1,33 @@
-'use client';
+"use client";
+
 import { useEffect, useState } from "react";
 import { ArrowRight, Sun, Moon } from "lucide-react";
 
 export default function Navbar({ darkMode, setDarkMode }) {
   const [scrolled, setScrolled] = useState(false);
 
+  // Theme
   useEffect(() => {
     const root = document.documentElement;
-    
+
     if (darkMode) {
       root.setAttribute("data-theme", "dark");
     } else {
       root.setAttribute("data-theme", "light");
     }
-  }, [darkMode]); 
+  }, [darkMode]);
 
+  // Navbar scroll effect
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
     };
 
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
 
   return (
@@ -38,8 +44,8 @@ export default function Navbar({ darkMode, setDarkMode }) {
             Prakash.<span>dev</span>
           </a>
 
-          {/* Mobile hamburger */}
-           <button
+          {/* Mobile / Tablet Hamburger */}
+          <button
             className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
@@ -51,8 +57,12 @@ export default function Navbar({ darkMode, setDarkMode }) {
             <span className="navbar-toggler-icon"></span>
           </button>
 
-          <div className="collapse navbar-collapse" id="mainNavbar">
-            <div className="navbar-nav ms-auto align-items-lg-center gap-3">
+          {/* Navigation */}
+          <div
+            className="collapse navbar-collapse"
+            id="mainNavbar"
+          >
+            <div className="navbar-nav ms-auto align-items-lg-center gap-lg-3">
 
               <a className="nav-link" href="#about">
                 About
@@ -69,19 +79,22 @@ export default function Navbar({ darkMode, setDarkMode }) {
               <a className="nav-link" href="#certificates">
                 Certificates
               </a>
-             
 
               <a className="nav-link" href="#contact">
                 Contact
               </a>
 
-              {/* Theme Toggle Button */}
+              {/* Theme Toggle */}
               <button
-                className="theme-toggle  rounded-circle"
+                className="theme-toggle rounded-circle"
                 onClick={() => setDarkMode(!darkMode)}
                 aria-label="Toggle theme"
               >
-                {darkMode ? <Sun size={18} /> : <Moon size={18} />}
+                {darkMode ? (
+                  <Sun size={18} />
+                ) : (
+                  <Moon size={18} />
+                )}
               </button>
 
               {/* Hire Me */}
@@ -89,7 +102,8 @@ export default function Navbar({ darkMode, setDarkMode }) {
                 href="#contact"
                 className="btn btn-primary rounded-pill px-4 hire-btn"
               >
-                Hire Me <ArrowRight size={17} />
+                Hire Me
+                <ArrowRight size={17} />
               </a>
 
             </div>

@@ -156,6 +156,54 @@ Optimized for fast loading and smooth browsing across mobile, tablet, and deskto
 
           </div>
         </div>
+
+        {/* Project 4 */}
+
+          <div className="col-12 col-md-6">
+          <div className="project-card h-100">
+
+            <img
+              src="news.png"
+              alt="Ecommerce Website"
+              className="img-fluid"
+            />
+
+            <div className="p-4">
+              <h3> Ecommerce Website</h3>
+
+              <p>
+A responsive Ecommerce website built with JavaScript, React, and Next.js, featuring organized article layouts and category-based navigation. 
+Optimized for fast loading and smooth browsing across mobile, tablet, and desktop.              </p>
+
+              <p className="technology">
+                JS • React • Next.js
+              </p>
+
+              <a
+                href="https://ecommerce-website-omega-teal.vercel.a"
+                target="_blank"
+                rel="noreferrer"
+                className="btn btn-primary me-2"
+              >
+                                <ExternalLink size={16} />
+
+              <span className="mx-2">Live Demo</span>  
+              </a>
+
+              <a
+                href="ecommerce-website-azrob6bsk-prakas-h-jung-kadayat-developer.vercel.app"
+                target="_blank"
+                rel="noreferrer"
+                className="btn btn-outline-light"
+              >
+<SiVercel size={16}/>
+               <span className="mx-2"> vercel</span>      
+                       </a>
+            </div>
+
+          </div>
+        </div>
+
       </div>
 
     </section>
