@@ -15,7 +15,7 @@ export default function Projects() {
       <div className="row g-4">
 
         {/* Project 1 */}
-        <div className="col-12 col-md-6">
+        <div className="col-12 col-md-4">
           <div className="project-card h-100">
 
             <img
@@ -24,24 +24,24 @@ export default function Projects() {
               className="img-fluid"
             />
 
-            <div className="p-4">
+            <div className="p-3 text-white">
               <h3>Travel Website</h3>
 
               <p>
               This is a responsive travel website I built using Next.js and React while learning modern frontend development.
                I focused on creating a clean, user-friendly layout and made sure the site works smoothly across mobile, tablet, and desktop screens.
-               .
+
               </p>
 
               <p className="technology">
-                React • Next.js
+                 • Next.js
               </p>
 
               <a
                 href=" https://prakashjung-devloper.github.io/Travel-web/"
                 target="_blank"
                 rel="noreferrer"
-                className="btn btn-primary me-2"
+                className="btn btn-primary mx-2  "
               >
                 <ExternalLink size={16} />
 <span className="mx-2">Live Demo</span>  
@@ -63,7 +63,7 @@ export default function Projects() {
 
 
         {/* Project 2 */}
-        <div className="col-12 col-md-6">
+        <div className="col-12 col-md-4">
           <div className="project-card h-100">
 
             <img
@@ -72,7 +72,7 @@ export default function Projects() {
               className="img-fluid"
             />
 
-            <div className="p-4">
+            <div className="p-4 text-white">
               <h3>Corporate Website</h3>
 
               <p>
@@ -81,7 +81,7 @@ export default function Projects() {
               </p>
 
               <p className="technology">
-                JS • React • Next.js
+                • Next.js
               </p>
 
               <a
@@ -112,7 +112,7 @@ export default function Projects() {
 
 
   {/* Project 3 */}
-        <div className="col-12 col-md-6">
+        <div className="col-12 col-md-4">
           <div className="project-card h-100">
 
             <img
@@ -129,7 +129,7 @@ A responsive news website built with JavaScript, React, and Next.js, featuring o
 Optimized for fast loading and smooth browsing across mobile, tablet, and desktop.              </p>
 
               <p className="technology">
-                JS • React • Next.js
+                • Next.js
               </p>
 
               <a
@@ -159,7 +159,7 @@ Optimized for fast loading and smooth browsing across mobile, tablet, and deskto
 
         {/* Project 4 */}
 
-          <div className="col-12 col-md-6">
+          <div className="col-12 col-md-4">
           <div className="project-card h-100">
 
             <img
@@ -168,7 +168,7 @@ Optimized for fast loading and smooth browsing across mobile, tablet, and deskto
               className="img-fluid"
             />
 
-            <div className="p-4">
+            <div className="p-4 text-white">
               <h3> Ecommerce Website</h3>
 
               <p>
@@ -176,7 +176,7 @@ A responsive Ecommerce website built with JavaScript, React, and Next.js, featur
 Optimized for fast loading and smooth browsing across mobile, tablet, and desktop.              </p>
 
               <p className="technology">
-                JS • React • Next.js
+                 • Next.js
               </p>
 
               <a
@@ -202,6 +202,49 @@ Optimized for fast loading and smooth browsing across mobile, tablet, and deskto
             </div>
 
           </div>
+        </div>
+
+        <div className="col-12 col-md-4">
+          <div className="project-card h-100">
+            <img src="cafee.png" alt="cafee web"className="img-fluid"/>
+ 
+ 
+            <div className="p-3 text-white">
+              <h3> KC Beans Website</h3>
+
+              <p>
+A responsive Caffee website built with JavaScript, React, and Next.js, featuring organized article layouts and category-based navigation. 
+Optimized for fast loading and smooth browsing across mobile, tablet, and desktop It is just Project for me that upgrade my skills.              </p>
+
+              <p className="technology">
+                 • Next.js
+              </p>
+
+              <a
+                href="https://prakashjung-devloper.github.io/cafee/"
+                target="_blank"
+                rel="noreferrer"
+                className="btn btn-primary mx-2"
+              >
+                                <ExternalLink size={16} />
+
+              <span className="mx-2">Live Demo</span>  
+              </a>
+
+              <a
+                href="https://github.com/prakashjung-devloper/cafee.git"
+                target="_blank"
+                rel="noreferrer"
+                className="btn btn-outline-light"
+              >
+<FaGithub size={16}/>
+               <span className="mx-2"> GitHub</span>      
+                       </a>
+            </div>
+
+
+          </div>
+
         </div>
 
       </div>

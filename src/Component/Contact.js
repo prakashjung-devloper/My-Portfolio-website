@@ -75,7 +75,7 @@ export default function Contact() {
           </div>
 
           {/* GitHub */}
-          <div className="contact-info text-white">
+          <div className="contact-info text-white ">
             <FaGithub size={22} />
             <div>
               <small>GitHub</small>
@@ -84,6 +84,7 @@ export default function Contact() {
                   href="https://github.com/prakashjung-devloper"
                   target="_blank"
                   rel="noreferrer"
+                  className="text-decoration-none"
                 >
                   github.com/prakashjung-devloper
                 </a>

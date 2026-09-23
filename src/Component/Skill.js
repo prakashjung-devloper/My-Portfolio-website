@@ -27,6 +27,13 @@ export default function Skill() {
       category: "Styling",
       status: "Comfortable",
     },
+     {
+      name: "Tailwind",
+      short: "T-css",
+      description: "Responsive Design",
+      category: "Styling",
+      status: "Comfortable",
+    },
     {
       name: "JavaScript",
       short: "JS",
