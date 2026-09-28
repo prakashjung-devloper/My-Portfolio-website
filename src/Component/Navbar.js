@@ -85,13 +85,7 @@ export default function Navbar() {
                 Projects
               </a>
 
-              <a
-                className="nav-link"
-                href="#certificates"
-                onClick={closeMenu}
-              >
-                Certificates
-              </a>
+              
 
               <a
                 className="nav-link"

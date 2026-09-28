@@ -20,17 +20,15 @@ export default function Projects() {
 
             <img
               src="travel.png"
-              alt="Travel Website "
+              alt="Travel  "
               className="img-fluid"
             />
 
             <div className="p-3 text-white">
-              <h3>Travel Website</h3>
+              <h3> Website</h3>
 
               <p>
-              This is a responsive travel website I built using Next.js and React while learning modern frontend development.
-               I focused on creating a clean, user-friendly layout and made sure the site works smoothly across mobile, tablet, and desktop screens.
-
+              A travel website for exploring destinations and planning trips. Clean layout that works smoothly on mobile, tablet, and desktop.
               </p>
 
               <p className="technology">
@@ -68,16 +66,14 @@ export default function Projects() {
 
             <img
               src="APEx.png"
-              alt="Corporate Website"
+              alt="Corporate "
               className="img-fluid"
             />
 
             <div className="p-4 text-white">
-              <h3>Corporate Website</h3>
+              <h3>Landing page</h3>
 
-              <p>
-                A responsive corporate website built with JavaScript, React, and Next.js, designed to give businesses a clean,
-                 professional online presence. Optimized for mobile, tablet, and desktop with smooth navigation and modern UI.
+              <p>A professional Landing page for a company, with sections for services, about, and contact. Simple navigation and a clean look on every screen size.
               </p>
 
               <p className="technology">
@@ -117,16 +113,14 @@ export default function Projects() {
 
             <img
               src="news.png"
-              alt="News Portal Website"
+              alt="News Portal "
               className="img-fluid"
             />
 
             <div className="p-4 text-white">
-              <h3>News Website</h3>
+              <h3> Website</h3>
 
-              <p>
-A responsive news website built with JavaScript, React, and Next.js, featuring organized article layouts and category-based navigation. 
-Optimized for fast loading and smooth browsing across mobile, tablet, and desktop.              </p>
+              <p>A news website that loads real articles from an API. Readers can browse by category, and the layout stays easy to read on any device.             </p>
 
               <p className="technology">
                 • Next.js
@@ -164,16 +158,14 @@ Optimized for fast loading and smooth browsing across mobile, tablet, and deskto
 
             <img
               src="ecommerce.png"
-              alt="Ecommerce Website"
+              alt="Ecommerce"
               className="img-fluid"
             />
 
             <div className="p-4 text-white">
-              <h3> Ecommerce Website</h3>
+              <h3> Website</h3>
 
-              <p>
-A responsive Ecommerce website built with JavaScript, React, and Next.js, featuring organized article layouts and category-based navigation. 
-Optimized for fast loading and smooth browsing across mobile, tablet, and desktop.              </p>
+              <p>A full-stack online store. Product data comes from an API, and orders and user data are saved in a Supabase database. Built to work on mobile, tablet, and desktop       </p>
 
               <p className="technology">
                  • Next.js
@@ -204,20 +196,20 @@ Optimized for fast loading and smooth browsing across mobile, tablet, and deskto
           </div>
         </div>
 
+ {/* project 5 */}
+
         <div className="col-12 col-md-4">
           <div className="project-card h-100">
             <img src="cafee.png" alt="cafee web"className="img-fluid"/>
  
  
             <div className="p-3 text-white">
-              <h3> KC Beans Website</h3>
+              <h3>  landing page</h3>
 
-              <p>
-A responsive Caffee website built with JavaScript, React, and Next.js, featuring organized article layouts and category-based navigation. 
-Optimized for fast loading and smooth browsing across mobile, tablet, and desktop It is just Project for me that upgrade my skills.              </p>
+              <p>A modern landing page for a coffee shop, built with HTML5 and Tailwind CSS. Shows the menu, about, and contact sections in a fast, responsive layout.              </p>
 
               <p className="technology">
-                 • Next.js
+                 • HTML&Tailwind-CSS
               </p>
 
               <a
@@ -233,6 +225,50 @@ Optimized for fast loading and smooth browsing across mobile, tablet, and deskto
 
               <a
                 href="https://github.com/prakashjung-devloper/cafee.git"
+                target="_blank"
+                rel="noreferrer"
+                className="btn btn-outline-light"
+              >
+<FaGithub size={16}/>
+               <span className="mx-2"> GitHub</span>      
+                       </a>
+            </div>
+
+
+          </div>
+
+        </div>
+
+
+ {/* project 6 */}
+
+          <div className="col-12 col-md-4">
+          <div className="project-card h-100">
+            <img src="fitness.png" alt="cafee web"className="img-fluid"/>
+ 
+ 
+            <div className="p-3 text-white">
+              <h3>  landing page</h3>
+
+              <p>A bold landing page for a gym, built with Next.js and Tailwind CSS. Highlights programs and membership with a clear call to action.  </p>
+
+              <p className="technology">
+                 • HTML&Tailwind-CSS
+              </p>
+
+              <a
+                href="https://prakashjung-devloper.github.io/fitness/"
+                target="_blank"
+                rel="noreferrer"
+                className="btn btn-primary mx-2"
+              >
+                                <ExternalLink size={16} />
+
+              <span className="mx-2">Live Demo</span>  
+              </a>
+
+              <a
+                href="https://github.com/prakashjung-devloper/fitness.git"
                 target="_blank"
                 rel="noreferrer"
                 className="btn btn-outline-light"

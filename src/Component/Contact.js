@@ -45,11 +45,12 @@ export default function Contact() {
         {/* Contact Information */}
         <div className="col-12 col-md-5">
 
-          <h3 className="text-white">Let's Work Together</h3>
+          <h3 className="text-white">Let's Build Your Website</h3>
 
           <p className="text-secondary">
-            Have a project in mind? Feel free to contact me.
-            I would be happy to discuss your idea.
+         
+ Available for freelance projects. Tell me what you need, and I'll send you a plan and a quote.
+
           </p>
 
           {/* Location */}
@@ -178,6 +179,10 @@ export default function Contact() {
             )}
 
           </form>
+          <div>
+            <h6 className="text-white text-center text-sm text-thin my-4">Send me a message and I'll reply within 24 hours.</h6>
+          
+          </div>
 
         </div>
 
