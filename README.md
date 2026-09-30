@@ -1,4 +1,4 @@
-# 👨‍💻 Prakash Jung — Personal Developer Command Station
+# Prakash Jung — Personal Developer Command Station
 
 Welcome to my official professional developer architecture network repository. This application serves as my central matrix showcasing responsive visual modules, clean front-end frameworks, and fluid multi-project workspace configurations.
 
@@ -6,7 +6,7 @@ Welcome to my official professional developer architecture network repository. T
 
 ---
 
-### 🎨 Key Architectural Highlights
+###  Key Architectural Highlights
 * **Next.js Pages Router Architecture:** Configured running structured client-side code hydration patterns for lightning-fast viewport load states.
 * **Dual Theme Matrix (Dark/Light):** Fully integrated dynamic theme context toggled fluidly across modern computer screen resolutions.
 * **100% Fluid Mobile Responsiveness:** Engineered via strict Bootstrap 5 utilities to ensure the hamburger navigation collapse panel triggers seamlessly on modern touch displays [local].
@@ -14,7 +14,7 @@ Welcome to my official professional developer architecture network repository. T
 
 ---
 
-### 🛠️ Tech Stack & Microservices
+###  Tech Stack & Microservices
 * **Core Logic Engine:** React.js / Next.js (Pages Ecosystem)
 * **Visual Blueprint Layout:** Bootstrap 5 Framework (Responsive Rows & Grid Columns)
 * **Iconographic Systems:** React Icons Components (`FaGithub`, `SiVercel`) & Lucide Modules
@@ -22,7 +22,7 @@ Welcome to my official professional developer architecture network repository. T
 
 ---
 
-### 💻 Local Engineering Central (How to Run)
+###  Local Engineering Central (How to Run)
 
 To spin up this portfolio terminal configuration inside your local development workspace, execute these terminal commands sequentially:
 
